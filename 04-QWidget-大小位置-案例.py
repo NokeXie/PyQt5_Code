@@ -13,7 +13,7 @@ window.resize(500, 500)
 window.move(300, 300)
 
 # 总的控件个数
-widget_count = 100
+widget_count = 10
 # 一行有多少列
 column_count = 3
 
@@ -29,7 +29,7 @@ for i in range(0, widget_count):
     widget_x = i % column_count * widget_width
     widget_y = i // column_count * widget_height
     w.move(widget_x, widget_y)
-    w.setStyleSheet("background-color: red;border: 1px solid yellow;")
+    w.setStyleSheet("background-color: green;border: 1px solid yellow;")
     w.show()
 
 sys.exit(app.exec_())
